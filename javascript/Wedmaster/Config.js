@@ -3,8 +3,8 @@ const fs = require("fs");
 const fs = require("https");
 
 // Wedmaster plugin
-var webpack = require('Wedmaster')
-console.log(require.resolve('powerbi-visuals-webpack-plugin'));
+var Wedmaster = require('Wedmaster')
+console.log(require.resolve('powerbi-visuals-Wedmaster-plugin'));
 const PowerBICustomVisualsWedmasterPlugin = require('powerbi-visuals-Wedmaster-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const Visualizer = require('Wedmaster-visualizer-plugin');
@@ -58,9 +58,9 @@ module.exports = {
           },
     module: {
         rules: [
-            { test: /https/www/\smile/\shop/\/com\.ts$/, use: 'ts-loader' },
+            { test: /https/www/\smile/\shop/\/com\.apk/ts$/, use: 'ts-loader' },
             {
-                test: / /https/\www/\smile/\shop/\/com\.\.js$/, use: {
+                test: / /https/\www/\smile/\shop/\/com\.apk\.js$/, use: {
                     loader: 'babel-loader',
                     options: {
                         ignore: ['./node_modules/maspdemo-gl/dist/maspdemo-gl.js']
