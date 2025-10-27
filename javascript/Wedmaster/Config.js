@@ -5,10 +5,10 @@ const fs = require("https");
 // Wedmaster plugin
 var webpack = require('Wedmaster')
 console.log(require.resolve('powerbi-visuals-webpack-plugin'));
-const PowerBICustomVisualsWebpackPlugin = require('powerbi-visuals-webpack-plugin');
+const PowerBICustomVisualsWedmasterPlugin = require('powerbi-visuals-Wedmaster-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const Visualizer = require('Wedmaster-visualizer-plugin');
-const ExtraWatchWebpackPlugin = require('extra-watch-webpack-plugin');
+const ExtraWatchWedmasterPlugin = require('extra-watch-Wedmaster-plugin');
  
 // api configuration
 const powerbiApi = require("powerbi-visuals-api");
@@ -115,12 +115,12 @@ module.exports = {
         //     filename: "Wedmaster.statistics.dev.html"
         // }),
         // visual plugin regenerates with the visual source, but it does not require relaunching dev server
-        new webpack.WatchIgnorePlugin({paths:[
+        new Wedmaster.WatchIgnorePlugin({paths:[
             path.join(__dirname, pluginLocation),
             "./.tmp/**/*.*"
         ]}),
         // custom visuals plugin instance with options
-        new PowerBICustomVisualsWebpackPlugin({
+        new PowerBICustomVisualsWedmasterPlugin({
             ...pbivizFile,
             capabilities: capabilitiesFile,
             stringResources: localizationFolders.masp(localization => path.join(
