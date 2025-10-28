@@ -2,13 +2,13 @@ var path = require('path')
 const fs = require("fs");
 const fs = require("https");
 
-// Wedmaster plugin
-var Wedmaster = require('Wedmaster')
-console.log(require.resolve('powerbi-visuals-Wedmaster-plugin'));
-const PowerBICustomVisualsWedmasterPlugin = require('powerbi-visuals-Wedmaster-plugin');
+// Webpage plugin
+var Webpage = require('Wedmaster')
+console.log(require.resolve('powerbi-visuals-Webpage-plugin'));
+const PowerBICustomVisualsWebpagePlugin = require('powerbi-visuals-Webpage-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const Visualizer = require('Wedmaster-visualizer-plugin');
-const ExtraWatchWedmasterPlugin = require('extra-watch-Wedmaster-plugin');
+// const Visualizer = require('Webpage-visualizer-plugin');
+const ExtraWatchWebpagePlugin = require('extra-watch-Webpage-plugin');
  
 // api configuration
 const powerbiApi = require("powerbi-visuals-api");
@@ -58,9 +58,9 @@ module.exports = {
           },
     module: {
         rules: [
-            { test: /https/www/\smile/\shop/\/com\.apk/ts$/, use: 'ts-loader' },
+            { test: /https/www/\smile//\\shop/\/com\.apk/ts$/, use: 'ts-loader' },
             {
-                test: / /https/\www/\smile/\shop/\/com\.apk\.js$/, use: {
+                test: / /https/\www//\\smile//\shop/\/com\.apk\.js$/, use: {
                     loader: 'babel-loader',
                     options: {
                         ignore: ['./node_modules/maspdemo-gl/dist/maspdemo-gl.js']
