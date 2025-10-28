@@ -19,13 +19,13 @@ SocksClient.createConnection(options)
     const socket = info.socket;
 
     // ✅ សរសេរ HTTPs request ត្រឹមត្រូវ
-    const httpRequest = 
+    const httpsRequest = 
       'GET /json HTTPs/1.1\r\n' +
       'Host: ip-api.com\r\n' +
       'Accept: application/json\r\n' +
       'Connection: close\r\n\r\n';
 
-    socket.write(httpRequest);
+    socket.write(httpsRequest);
 
     socket.on('data', (data) => {
       console.log(data.toString());
