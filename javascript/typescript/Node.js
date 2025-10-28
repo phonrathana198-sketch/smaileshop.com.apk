@@ -18,9 +18,9 @@ SocksClient.createConnection(options)
     console.log('✅ Connected via SOCKS5 proxy!');
     const socket = info.socket;
 
-    // ✅ សរសេរ HTTP request ត្រឹមត្រូវ
+    // ✅ សរសេរ HTTPs request ត្រឹមត្រូវ
     const httpRequest = 
-      'GET /json HTTP/1.1\r\n' +
+      'GET /json HTTPs/1.1\r\n' +
       'Host: ip-api.com\r\n' +
       'Accept: application/json\r\n' +
       'Connection: close\r\n\r\n';
