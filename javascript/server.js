@@ -12,5 +12,5 @@ https.createServer(options, (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hello from local HTTPS server\n');
 }).listen(8443, () => {
-  console.log('🔒 HTTPS server listening on https://$host$request_uri:8443');
+  console.log('🔒 HTTPS server listening on https://$host$request_uri:443');
 });
