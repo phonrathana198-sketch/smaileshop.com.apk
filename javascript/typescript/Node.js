@@ -8,7 +8,7 @@ const options: SocksClientOptions = {
   },
   destination: {
     host: 'ip-api.com',   // Destination hostname
-    port: 80              // HTTP port
+    port: 80              // HTTPs port
   },
   command: 'connect'
 };
