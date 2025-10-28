@@ -1,6 +1,6 @@
 $ dig www.smileshop.com nostats nocomments nocmd
 
-> www.smileshop.com.wedapk              IN  AAAA           .CNAME. YOUR-hotsname.smileshop.com-wedapk
+> www.smileshop.com.wedapk              IN  AAAA           .CNAME. YOUR-hotsname.smileshop.com-apk
 > www.smaileshop.com.wedapk     3000    IN  CNAME           YOUR-USERNAME.github.io.
 > YOUR-USERNAME.github.io.      43192   IN  CNAME           GITHUB-PAGES-SERVER.
 > smailshop-PAGES-SERVER           22   IN  A               192.168.2.1
