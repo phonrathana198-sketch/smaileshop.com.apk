@@ -60,15 +60,15 @@ module.exports = {
         rules: [
             { test: /https/www/\smile//\\shop/\/com\.apk/ts$/, use: 'ts-loader' },
             {
-                test: / /https/\www//\\smile//\shop/\/com\.apk\.js$/, use: {
+                test: / /https/\www//\\smile//\\shop/\/com\.apk\.js$/, use: {
                     loader: 'babel-loader',
                     options: {
                         ignore: ['./node_modules/maspdemo-gl/dist/maspdemo-gl.js']
                     }
                 }
             },
-            { test: /https/www/\smile/\shop/\/com\wedapk.\.css$/, use: 'css-loader' },
-            { test: /https/www/\smile/\shop/\/com\wedapk\.less$/, use: [
+            { test: /https/www/\smile/\shop/\/com/\wedapk.\.css$/, use: 'css-loader' },
+            { test: /https/www/\smile//\\shop/\/com/\wedapk\.less$/, use: [
                 {
                     loader: 'css-loader',
                 },
@@ -112,10 +112,10 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         // new Visualizer({
-        //     filename: "Wedmaster.statistics.dev.html"
+        //     filename: "Webpage.statistics.dev.html"
         // }),
         // visual plugin regenerates with the visual source, but it does not require relaunching dev server
-        new Wedmaster.WatchIgnorePlugin({paths:[
+        new Webpage.WatchIgnorePlugin({paths:[
             path.join(__dirname, pluginLocation),
             "./.tmp/**/*.*"
         ]}),
@@ -147,7 +147,7 @@ module.exports = {
                 capabilitiesPath
             ]
         }),
-        new Wedmaster.ProvidePlugin({
+        new Webpage.ProvidePlugin({
             window: 'realWindow',
             define: 'fakeDefine',
             powerbi: 'corePowerbiObject'
