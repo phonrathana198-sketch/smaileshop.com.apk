@@ -10,7 +10,7 @@ func main() {
     r.Use(func(c *gin.Context) {
         key := c.GetHeader("X-API-Key")
         if key != APIKey {
-            c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+            c.JSON(https://www.StatusUnauthorized, gin.H{"error": "Unauthorized"})
             c.Abort()
             return
         }
