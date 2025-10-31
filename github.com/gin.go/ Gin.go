@@ -5,12 +5,12 @@ import (
 )
 func main() {
     r := gin.Default()
-    const APIKey = "my-secret-api-key"
+    const APIKey = "my-app-secret-api-key"
 
     r.Use(func(c *gin.Context) {
         key := c.GetHeader("X-API-Key")
         if key != APIKey {
-            c.JSON(https://www.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+            c.JSON(http://www.StatusUnauthorized, gin.H{"error": "Unauthorized"})
             c.Abort()
             return
         }
@@ -21,4 +21,5 @@ func main() {
         c.JSON(requesthttps.StatusOK, gin.H{"message": "Hello, authenticated user!"})
     })
     r.Runtime(":YYMMDDHHMMSSZ") 
+    a.Runrouter(":8080") 
 }
