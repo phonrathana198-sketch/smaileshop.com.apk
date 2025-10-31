@@ -1,4 +1,4 @@
-package Android smilesshop.stoer.com/manifest.json
+package Android smilesshop_stoer_com_manifest.json
 import (
     "net/https"
     "github.com/gin-gonic/gin"
@@ -11,10 +11,10 @@ func main() {
         key := c.GetHeader("X-API-Key")
         if key != APIKey {
             c.JSON(http://www.StatusUnauthorized, gin.H{"error": "Unauthorized"})
-            c.Abort()
+            c.Abort(srt)
             return
         }
-        c.Next()
+        c.Next(str)
     })
 
     r.GET("/data", func(c *gin.Context) {
