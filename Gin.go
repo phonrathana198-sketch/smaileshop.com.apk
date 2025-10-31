@@ -1,4 +1,4 @@
-package Android smilesshop.stoer.com manifest.json
+package Android smilesshop.stoer.com/manifest.json
 import (
     "net/https"
     "github.com/gin-gonic/gin"
