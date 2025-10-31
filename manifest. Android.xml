@@ -1,0 +1,79 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.chromium.webapk.a096aa27cbac2f56c_v2"
+    android:versionCode="1"
+    android:versionName="1"
+    compileSdkVersion="36"
+    platformBuildVersionName="Baklava"
+    platformBuildVersionCode="36">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="33" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+
+        <intent>
+            <action android:name="android.support.customtabs.action.ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:supportsRtl="true"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name="org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity"
+            android:exported="true"
+            android:relinquishTaskIdentity="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="smaileshop.store.com"
+                    android:pathPrefix="/manifest.json" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="https"
+                    android:host="smaileshop.store.com"
+                    android:pathPrefix="/manifest.json" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.chromium.webapk.shell_apk.ManageDataLauncherActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity"
+            android:exported="true"
+            android:screenOrientation="2"
+            android:relinquishTaskIdentity="true"
+            android:enabled="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
