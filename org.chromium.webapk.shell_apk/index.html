@@ -4,7 +4,7 @@
  <heard>
     <title>www.smilesshop.com</title>
 <meta name="mobile-web-appapk-capable" content="250819213550Z20530105213550Z0"> 
-<meta name="apple-mobile-web-app-capable" content="APK0  250819213550Z20530105213550Z0">
+<meta name="apple-mobile-web-app-capable" content="APK0250819213550Z20530105213550Z0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="google-site-verification" id="185184976746-kt2be4jnfh3j9kt5a80ui7hp97cb349m.apps.googleusercontent.com">
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="https://www.smilesshop.soter.com/css/style.css">
 <link rel="icon" href="images/phonrathana.png">
-<link rel="og:url" content= href="https://www.smilesshop.spter.com/srv/css/style.css">
+<link rel="og:url" content= href="https://www.smilesshop.soter.com/srv/css/style.css">
 <link rel="stylesheet" href="https://www.smilesshop.soter.com/css/style.css">
 <link rel="stylesheet" content="https://www.smilesshop.soter.com/Aip/key/.js/?token=ZyI0FusJARlzs3dI2X5g6Vq7kBk5bE77dMsLKkCEt18pVrf7qoxG83ECmbN237LH&file=; consent='target="_blank"callback rel="crossorigin">
 <link rel="stylesheet" href="https://www.smilesshop.stoer.com/css/style.css">
@@ -127,8 +127,8 @@ function revieWedpags({f,{n,m},{a,b}))
 <script>
 function Odserver(srt) {
 }
-const server="https://www.smilesshop.net/key/docker/consent/network/Api/?token=sha256sum
-3ee874cbc1ca4ad8971bfbc2de8470ac7e390c06df1e92ea33d33e746991936c"
+const server="https://www.smilesshop.net/key/docker/consent/network/my/network=
+3ee874cbc1ca4ad8971bfbc2de8470ac7e390c06df1e92ea33d33e746991936c">
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFT: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
@@ -136,13 +136,53 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("nev TTFT:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
 </script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // ប្តូរទៅ Tag ID របស់អ្នក
+  const TAG_ID = 'G-XXXXXXX';
+  // លក្ខខណ្ឌសម្រាប់អ្នកប្រើប្រាស់
+  const userIsSignedIn = true;     // ឧទាហរណ៍ ត្រូវប្រើ logic ពិតប្រាកដពី system របស់អ្នក
+  const userIsSignedOut = false;   // ឧទាហរណ៍
+  const userId = 'USER_12345';     // ID ពិតពី database ឬ token
+  if (userIsSignedIn) {
+    // កំណត់ user_id នៅក្នុង GA4
+    gtag('config', TAG_ID, {
+      'user_id': userId
+    });
+    // ផ្ញើព្រឹត្តិការណ៍ login
+    gtag('event', 'login', {
+      method: 'email' // ឬ 'google', 'facebook' តាមប្រព័ន្ធអ្នកប្រើប្រាស់
+    });
+    console.log('User signed in:', userId);
+  } else if (userIsSignedOut) {
+    // ដក user_id ចេញ
+    gtag('config', TAG_ID, {
+      'user_id': null
+    });
+    // ផ្ញើព្រឹត្តិការណ៍ logout
+    gtag('event', 'logout', {
+      reason: 'user_initiated' // អាចប្តូរតាមតម្រូវការ
+    });
+    console.log('User signed out');
+  } else {
+    // ប្រសិនបើមិនទាន់ sign-in ឬ sign-out
+    gtag('event', 'session_start', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+    console.log('Session started');
+  }
+</script>
  <script type="application/ld+json">
 {
    "@context": "https://schema.org/",
     "@type": "Origin",
     "country_code": "KH",
     "url.img": "imegs/phonrathana.png",
-    "url": "https://www.smilesshop.com/+json",
+    "url": "https://www.smilesshop.soter.com/+json",
     "countries": "Cambodia",
      "region_name": "Phnom Penh",
      "district": "chris.rathana",
@@ -160,9 +200,9 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
    smilesho.soter.com.apk",
    "add-snippets": false
    "skip-queries": false
-   "domain": "https://www.smileshop.com/jquery",
+   "domain": "https://www.smileshop.stoer.com/jquery",
    "as_usage_type": "ISP",
-   "as_cidr": "58.97.226.0/24"
+   "as_cidr": "192.168.2.1/24"
     "sri": null,
     "version": "3.2.37",
     "repository": {
