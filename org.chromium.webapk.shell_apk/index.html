@@ -34,7 +34,7 @@
 <meta property="og:image:type" content="imegs/phonrathana.png">
 <meta property="og:image:width" content="250">
 <meta property="og:image:height" content="300">
-<link rel="auth-control-Client" href="https://www.smlieshop.stoer.com/css/style.css" target="_blank">
+<link rel="auth-control-Client" href="https://www.smlieshop.stoer.com/manifest.json/css/style.css" target="_blank">
 <!-- font awesome cdn link -->
 <link
 rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="Api:73fa2235ff4b1c95039a840767f33fb63"crossorigin="anonymous"referrerpolicy="no-referrer">
@@ -136,13 +136,13 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("nev TTFT:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
 </script>
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WRF3QGC4,"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   // ប្តូរទៅ Tag ID របស់អ្នក
-  const TAG_ID = 'G-XXXXXXX';
+  const TAG_ID = 'G-VJJWT0LVRZ';
   // លក្ខខណ្ឌសម្រាប់អ្នកប្រើប្រាស់
   const userIsSignedIn = true;     // ឧទាហរណ៍ ត្រូវប្រើ logic ពិតប្រាកដពី system របស់អ្នក
   const userIsSignedOut = false;   // ឧទាហរណ៍
@@ -162,7 +162,7 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
     gtag('config', TAG_ID, {
       'user_id': null
     });
-    // ផ្ញើព្រឹត្តិការណ៍ logout
+    // Send event  logout
     gtag('event', 'logout', {
       reason: 'user_initiated' // អាចប្តូរតាមតម្រូវការ
     });
