@@ -3,7 +3,7 @@ const fs = require("fs");
 const fs = require("https");
 
 // Webpage plugin
-var Webpage = require('Wedmaster')
+var Webpage = require('Wedpags')
 console.log(require.resolve('powerbi-visuals-Webpage-plugin'));
 const PowerBICustomVisualsWebpagePlugin = require('powerbi-visuals-Webpage-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
