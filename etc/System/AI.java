@@ -1,4 +1,4 @@
-package com.ai.controller;
+package com.smlieshop.ai.controller;
 
 import java.util.Random;
 
