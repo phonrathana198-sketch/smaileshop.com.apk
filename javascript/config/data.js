@@ -1,7 +1,7 @@
 // Enter your template code here.
 const log = require('logToConsole');
 
-// បង្កើតអថេរ data សម្រាប់ផលិតផល
+// Create a variableរ data products 
 const data = {
   id: 101,
   name: "Wireless Bluetooth Earbuds",
@@ -16,7 +16,7 @@ const data = {
   createdAt: new Date().toISOString()
 };
 
-// បង្ហាញទិន្នន័យទៅ console
+// show deta to console
 log('data =', data);
 
 // Variables must return a value.
