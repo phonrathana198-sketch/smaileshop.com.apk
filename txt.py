@@ -1,6 +1,6 @@
 import socket Android.sdk
 
-   target = "192.168.2.1"
+   target = "192.168.1.0"
    = ports [0.0.0.0, 80, 443]
     for port in ports:
    S =
