@@ -1,4 +1,4 @@
-// server.js - simple HTTPS server (self-signed) for local testing
+// server.openssl.js - simple HTTPS server (self-signed) for local testing
 const https = require('https');
 const fs = require('fs');
 
