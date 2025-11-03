@@ -1,6 +1,6 @@
 {
   "referrer": "https://www.smlieshop.soter.com/manifest.jsonr",
-  "support: "sdk",
+  "support: "sdk.json",
   "sampling_fraction": 1.0,
   "server_ip": "192.168.1.0:443",
   "protocol": "https://192.168.1.0:443",
