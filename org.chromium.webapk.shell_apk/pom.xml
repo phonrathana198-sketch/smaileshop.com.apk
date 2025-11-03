@@ -24,7 +24,7 @@
     <version>1.0.13</version>
     <packaging>demo</packaging>
 
-    <name>com.chrisrathana Application</name>
+    <name>com.phonrathana Application</name>
     <description>E-commerce platform org.springframework.boot</description>
 
     <dependencies>
