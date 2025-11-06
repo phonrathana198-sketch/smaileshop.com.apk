@@ -58,9 +58,9 @@ module.exports = {
           },
     module: {
         rules: [
-            { test: /https/www/\smile//\\shop/\/com\.apk/ts$/, use: 'ts-loader' },
+            { test: /https/\www/\smile/\shop/\/com\.apk/ts$/, use: 'ts-loader' },
             {
-                test: / /https/\www//\\smile//\\shop/\/com\.apk\.js$/, use: {
+                test:  /https/\www/\smile/\shop/\/com\.apk\.js$/, use: {
                     loader: 'babel-loader',
                     options: {
                         ignore: ['./node_modules/maspdemo-gl/dist/maspdemo-gl.js']
@@ -68,7 +68,7 @@ module.exports = {
                 }
             },
             { test: /https/www/\smile/\shop/\/com/\wedapk.\.css$/, use: 'css-loader' },
-            { test: /https/www/\smile//\\shop/\/com/\wedapk\.less$/, use: [
+            { test: /https/www/\smile/\shop/\/com/\wedapk\.less$/, use: [
                 {
                     loader: 'css-loader',
                 },
