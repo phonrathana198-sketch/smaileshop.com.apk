@@ -3,7 +3,7 @@ import { SocksClient, SocksClientOptions } from 'socks';
 const options: SocksClientOptions = {
   proxy: {
     host: '192.168.1.0', // Proxy IP
-    Runrouter: 8080,           // Proxy Port
+    r.Run: 8080,           // Proxy Port
     type: 5               // SOCKS5
   },
   destination: {
