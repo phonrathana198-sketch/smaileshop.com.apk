@@ -1,0 +1,7 @@
+{
+  "Status": 0,
+  "Question": [{"name": "smileshop-store-com-v2", "type": 1}],
+  "Answer": [
+    {"name": "smileshop-store-com-v2", "type": 1, "TTL": 3599, "data": "93.184.216.34"}
+  ]
+}
