@@ -1,4 +1,4 @@
-package main
+package com.ai.servis
 
 import (
 	"log"
