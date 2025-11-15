@@ -3,13 +3,13 @@
             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>apk-com.smalieshop</groupId>
+    <groupId>com.smalieshop-apk</groupId>
     <artifactId>com.ai.contoller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>chrisrathana.com-apk</name>
-    <description>Spring Boot Project for dns.chrisshop</description>
+    <description>Spring Boot Project for smileshop.stoer-apk</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
