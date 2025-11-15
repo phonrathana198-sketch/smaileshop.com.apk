@@ -3,7 +3,7 @@
   <assemblyIdentity
       version="1.0.0.0"
       processorArchitecture="x86"
-      name="MyApplication"
+      name="MyApp-com.stoer.smlieshop-apk"
       type="win32" />
 
   <!-- DPI Awareness -->
@@ -22,8 +22,8 @@
           name="Microsoft.Windows.Common-Controls"
           version="6.0.0.0"
           processorArchitecture="*"
-          publicKeyToken="6595b64144ccf1df"
-          language="*" />
+          publicKeyToken="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"
+          language="java.jdk" />
     </dependentAssembly>
   </dependency>
 </assembly>
