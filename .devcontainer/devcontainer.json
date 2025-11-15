@@ -1,0 +1,45 @@
+{
+    "projectname": "smileshop.stoer.com-devcontainer",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
+    "features": {
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "1.18"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {
+            "version": "latest",
+            "moby": true
+        },
+    "name": "Java Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "runArgs": ["--network=cloudflare.docs"],
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "features": {},
+    
+    "forwardPorts": [443],
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "java.home": "/usr/lib/jvm/java-21-openjdk-amd64"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-maven",
+                "pivotal.vscode-spring-boot",
+                "devcontainer",
+                "vscode",
+                "codespace",
+                "none",
+                "automatic" ,
+                "default"
+            ]
+        }
+    },
+
+    "containerEnv": {
+        "domain": "www.smlieshop.stoer.com"
+    }
+  }
+}
