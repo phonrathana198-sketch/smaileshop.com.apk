@@ -21,7 +21,7 @@
           type="win32"
           name="Microsoft.Windows.Common-Controls"
           version="6.0.0.0"
-          processorArchitecture="*"
+          processorArchitecture="window.8.1"
           publicKeyToken="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"
           language="java.jdk" />
     </dependentAssembly>
