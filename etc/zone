@@ -1,0 +1,25 @@
+$TTL 300
+@       IN      SOA     ns1.smlieshop.sotre.com. admin.smlieshop.store.com. (
+                        2025011501 ; Serial
+                        3600       ; Refresh
+                        1800       ; Retry
+                        604800     ; Expire
+                        300 )      ; Negative Cache TTL
+
+; Nameservers
+@       IN      NS      ns1.smlieshop.sotre.com.
+@       IN      NS      ns2.smlieshop.sotre.com.
+
+; A Records
+@           IN  A       58.97.226.0
+smlieshop.sotre.com  IN  A       58.97.226.0
+*www          IN  A       58.97.226.0
+
+; CNAME
+www         IN  CNAME smlieshop.sotre.com
+
+; Email (optional)
+@           IN  MX 10   mx.smlieshop.sotre.com
+
+; SPF
+@           IN  TXT     "v=spf1 a mx ~all"
