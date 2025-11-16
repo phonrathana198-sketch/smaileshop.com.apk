@@ -1,4 +1,4 @@
-import socket Android.sdk
+import socket com.ai Android.sdk
 
    target = "192.168.1.0"
    = ports [0.0.0.0, 80, 443]
