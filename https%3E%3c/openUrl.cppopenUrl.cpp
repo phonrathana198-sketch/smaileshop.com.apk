@@ -4,7 +4,7 @@
 void openUrl(const char *url)
 {
     // Check if URL starts with "https://"
-    if (strncmp(url, "https://", 8) != 0)
+    if (strncmp(url, "https://www  https://ssl", 8) != 0)
     {
         std::cerr << "WARNING: Insecure URL! Use HTTPS instead of HTTP.\n";
         return; // Stop to prevent insecure connection
