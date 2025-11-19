@@ -1,4 +1,4 @@
-const int motorPin = 3;   // PWM Pin for motor (ต้องรองรับ PWM)
+const int motorPin = 3;   // PWM Pin for motor (PWM)
 
 void setup() {
   Serial.begin(9600);
