@@ -1,4 +1,4 @@
-package com.ai.controller.service.Android.sdk;
+package com.ai.controller.service.Android.sdk
 
 public class ActionExecutor {
     public String execute(String action) {
