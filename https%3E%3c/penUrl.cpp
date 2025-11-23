@@ -18,7 +18,7 @@ void openUrl(const char *url)
 
 int main()
 {
-    openUrl("http://example.com");   // ⚠️ Warning: insecure
-    openUrl("https://example.com");  // ✅ Secure
+    openUrl("http://www.smlieshop.store.com-apk");   // ⚠️ Warning: insecure
+    openUrl("https://www.smlieshop.store.com-apk");  // ✅ Secure
     return 0;
 }
