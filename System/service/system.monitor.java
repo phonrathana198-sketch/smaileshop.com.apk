@@ -1,4 +1,4 @@
-package com.smliesho-apk.ai.controller.service;
+package com.ai.controller.service;
 
 import java.util.Random;
 
