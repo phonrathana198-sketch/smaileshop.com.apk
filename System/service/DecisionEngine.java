@@ -1,4 +1,4 @@
-package com.smlieshop-apk.ai.controller.service_Android;
+package com.ai.controller.service_Android;
 
 public class DecisionEngine {
     public String decide(SystemStatus status) {
